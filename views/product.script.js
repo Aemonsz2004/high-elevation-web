@@ -1,3 +1,6 @@
+
+
+// navigation bar disappears when scrolling down
 let lastScrollY = window.scrollY;
 
 window.addEventListener('scroll', () => {
@@ -11,4 +14,22 @@ window.addEventListener('scroll', () => {
         navbar.style.top = '0';
     }
     lastScrollY = window.scrollY;
+});
+
+
+
+
+// profile drop down
+function toggleDropdown(){
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.classList.toggle('show');
+}
+
+// close dropdown when clicking outside
+window.addEventListener('click', (e) => {
+    const dropdown = document.querySelector('.dropdown');
+    const profileIcon = document.querySelector('.profile-icon');
+    if (!profileIcon.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove('show');
+    }
 });
