@@ -45,7 +45,7 @@ nav a{
     background-color: rgba(0, 0, 0, 0.3);
     padding: 0 20px;
     z-index: 10;
-    transition: top 0.3s ease; /* Smooth hiding and showing */
+    transition: top 0.3s ease;
 }
 
 .left-nav{
@@ -99,7 +99,8 @@ nav a{
 /* PRODUCTS SECTION */
 .products-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+
 }
 aside {
     position: sticky;
@@ -176,6 +177,7 @@ a {
     height: 72.31%;
     background-color: #FFFFFF;
 }
+/* Product image styling */
 .product-card-image-container img {
     position: relative;
     top: 50%;
@@ -183,6 +185,53 @@ a {
     transform: translate(-50%, -50%);
     width: 110px;
     height: 100px;
+    z-index: 1; 
+    object-fit: cover;
+}
+
+/* Test feature hover icons product card */
+.product-card-hover-icons {
+    position: relative;
+    top: -10%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    z-index: 999;
+    display: none;
+}
+.product-card-hover-icons {
+    display: flex;
+    gap: 22px;
+    margin: 0 20px 0 20px;
+    opacity: 0;
+}
+.product-card-hover-icons a img {
+    position: relative;
+    width: 22px;
+    height: 22px;
+}
+
+.product-card:hover .product-card-hover-icons {
+    animation: fadeInUp 0.4s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(10);
+    }
+}
+
+.product-card:hover .icons {
+    animation: fadeInUp 0.4s ease forwards;
 }
 
 
@@ -190,7 +239,7 @@ a {
 
 .product-card-size-description {
     position: relative;
-    top: 33px;
+    top: -9.7%;
     left: 24px;
     width: 111px;
     height: 22px;
