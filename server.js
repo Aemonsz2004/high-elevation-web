@@ -27,9 +27,16 @@ app.get('/products', (req, res) => {
     res.render('products/product', { title: 'Welcome to High Elevation Web' });
 });
 
-app.get('/profiles', (req, res) => {
+app.get('/profile', (req, res) => {
     res.render('users/profile.ejs', { title: 'Welcome to High Elevation Web' });
 });
+
+app.get('/login', (req, res) => {
+    res.render('login/login.ejs', {title: "Welcome to High Elevation Web" });
+})
+app.get('/signup', (req, res)=> {
+    res.render('signup/signup.ejs', {title: "Welcome to High Elevation Web"});
+})
 
 // Server setup
 const PORT = process.env.PORT || 3000;
