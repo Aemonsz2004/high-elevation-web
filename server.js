@@ -23,20 +23,21 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Welcome to High Elevation Web' });
 });
 
-app.get('/products', (req, res) => {
-    res.render('products/product', { title: 'Welcome to High Elevation Web' });
+// Route for Product Page
+app.get('/product', (req, res) => {
+  res.render('product', { title: 'Products' });
 });
 
-app.get('/profile', (req, res) => {
-    res.render('users/profile.ejs', { title: 'Welcome to High Elevation Web' });
+// Route for Product Page
+app.get('/menu', (req, res) => {
+  res.render('menu', { title: 'Products' });
 });
 
-app.get('/login', (req, res) => {
-    res.render('login/login.ejs', {title: "Welcome to High Elevation Web" });
-})
-app.get('/signup', (req, res)=> {
-    res.render('signup/signup.ejs', {title: "Welcome to High Elevation Web"});
-})
+// Route for Product Page
+app.get('/about', (req, res) => {
+  res.render('product', { title: 'Products' });
+});
+
 
 // Server setup
 const PORT = process.env.PORT || 3000;
