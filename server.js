@@ -5,7 +5,7 @@ const app = express();
 
 // Set EJS as the templating engine
 app.set('view engine', 'ejs');
-app.set('views', './views'); // Specify the views folder
+//app.set('views', './views'); // Specify the views folder
 
 // Middleware
 app.use(express.json());
@@ -35,8 +35,9 @@ app.get('/menu', (req, res) => {
 
 // Route for Product Page
 app.get('/about', (req, res) => {
-  res.render('product', { title: 'Products' });
+  res.render('about', { title: 'about' });
 });
+
 
 
 // Server setup
