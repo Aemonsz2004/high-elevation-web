@@ -4,50 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Book</title>
-    <link rel="stylesheet" href="../public/css/pages/about.css">
+    <link rel="stylesheet" href="../public/css/address.css">
 </head>
 <body>
-    <div class="address-book">
-        <h1>Address Book</h1>
-        
-        <div class="grid-row header">
-            <div>Full Name</div>
-            <div>Address</div>
-            <div>Postcode</div>
-            <div>Phone Number</div>
-        </div>
 
-        <!-- Address Entry 1 -->
-        <div class="address-entry">
-            <div class="grid-row">
-                <div>April Bords Nerosa</div>
-                <div>HOME</div>
-                <div></div>
-                <div>
-                    <div class="default-address">Default Shipping Address</div>
-                    <div class="default-address">Default Billing Address</div>
-                </div>
+    <div class="container">
+        <div class="header">
+            <h2>Address Book</h2>
+            <div class="links">
+                <a href="#">Make default shipping address</a> |
+                <a href="#">Make default billing address</a>
             </div>
-            <a class="edit-button">EDIT</a>
         </div>
 
-        <!-- Address Entry 2 -->
-        <div class="address-entry">
-            <div class="grid-row">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div class="default-address">Default Billing Address</div>
-            </div>
-            <a class="edit-button">EDIT</a>
-            <a class="edit-button">EDIT</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Address</th>
+                    <th>Postcode</th>
+                    <th>Phone Number</th>
+                    <th></th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>April Bords Nerosa</td>
+                    <td><span class="badge">HOME</span></td>
+                    <td> 8000</td>
+                    <td></td>
+                    <td>
+                        <p>Default Shipping Address</p>
+                        <p>Default Billing Address</p>
+                    </td>
+                    <td><a href="#" class="edit">EDIT</a></td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <div class="add-button">
+            <button>+ ADD NEW ADDRESS</button>
         </div>
-
-        <div class="separator"></div>
-
-        <button class="add-button">
-            + ADD NEW ADDRESS
-        </button>
     </div>
+
 </body>
 </html>

@@ -1,67 +1,88 @@
-.address-book {
-  max-width: 800px;
-  margin: 20px auto;
+body {
   font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-h1 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.address-entry {
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 15px;
-}
-
-.grid-row {
-  display: grid;
-  grid-template-columns: 2fr 1.5fr 1fr 2fr;
-  gap: 15px;
-  margin-bottom: 10px;
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
 }
 
 .header {
-  font-weight: bold;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.edit-button {
-  color: #007bff;
+.header h2 {
+  font-size: 24px;
+}
+
+.links a {
+  color: #007BFF;
   text-decoration: none;
-  margin-right: 15px;
-  cursor: pointer;
+  margin-left: 10px;
 }
 
-.edit-button:hover {
+.links a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #f3f3f3;
+}
+
+.badge {
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.edit {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.edit:hover {
   text-decoration: underline;
 }
 
 .add-button {
-  background: none;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.add-button button {
+  background: #007BFF;
+  color: white;
   border: none;
-  color: #007bff;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
-  padding: 10px 0;
-  font-size: 16px;
 }
 
-.add-button:hover {
-  text-decoration: underline;
-}
-
-.separator {
-  border-top: 1px solid #eee;
-  margin: 20px 0;
-}
-
-.default-address {
-  color: #666;
-  font-size: 0.9em;
+.add-button button:hover {
+  background: #0056b3;
 }
