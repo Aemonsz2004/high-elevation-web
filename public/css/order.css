@@ -1,0 +1,152 @@
+body {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #eeeeee;
+
+}
+
+.main-container {
+  margin: 10px 5%;
+}
+/* SEARCH BAR */
+.search-container {
+
+  padding: 10px;
+  background: #ffffff;
+}
+
+.search-box {
+  width: 95.2%;
+  padding: 12px 40px;
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
+.search-box::placeholder {
+  color: #9ca3af;
+}
+
+.search-icon {
+  position: absolute;
+  left: 7%;
+  top: 10.5%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+/* ////////////////////////////// */
+
+.order-container {
+  width: 100%;
+  margin: 2% 0 2% 0  ;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.status {
+  background-color: #e0eafc;
+  color: #555;
+  padding: 6px 10px;
+  font-weight: 600  ;
+  font-size: 12px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+tr {
+  padding: 2%;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.logo-container {
+  margin-right: 5%;
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+.logo {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+
+}
+
+.product-name {
+  margin-bottom: 15px;
+  font-size: 20px;
+  overflow-x: hidden;
+}
+
+.product-description {
+
+  font-size: 15px;
+  color: #555;
+}
+
+.price {
+
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.quantity {
+  font-size: 20px;
+  margin-top: 20px;
+
+}
+.row {
+  width: 80%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.product {
+  display: flex;
+
+}
+
+.search-icon {
+  height: 20px;
+  width: auto;
+}
+
+.product-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+
+}
+
