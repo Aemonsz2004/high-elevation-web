@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/profileOrder.css">
+    <script src="../public/javaScript/profile.script.js" defer></script>
+</head>
+<body>
+  
+    <nav>
+        <div id="navbar" class="navbar">
+            <div class="left-nav">
+                <a href="">Menu</a>
+                <a href="">Product</a>
+                <a href="">About us</a>
+            </div>
+            <div class="logo"><a href="">HIGH ELEVATION</a></div>
+            <div class="right-nav">
+                <div class="search-bar">
+                    <input type="search" name="product_search" id="">
+                </div>
+    
+                <div class="icon profile-icon" onclick="toggleDropdown()">
+                    <img src="assets/icons/profile.svg" alt="profile">
+                    <!-- Dropdown menu -->
+                    <div id="dropdown" class="dropdown hidden">
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Address</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="icon"><img src="assets/icons/cart.svg" alt="shopping-cart"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <aside class="user-setting-menu">
+            <h1>User Settings</h1>
+            <div class="user-settings-menu">
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-container1">
+
+          <h1>My Orders</h1>
+      
+          <div class="search-container">
+            <img class="search-icon" src="./search.png" alt="">
+            <input type="text" class="search-box" placeholder="Search by seller name, order ID or product name">
+          </div>
+      
+          
+          <div class="order-container">
+      <!-- order header
+              <div class="order-header">
+                <div></div>
+                  <span class="status">Delivered</span>
+              </div> -->
+      <!-- ordet table -->
+              <table>
+
+                <thead>
+
+                  <tr>
+                    <td class="price-wrap"></td>
+                    <td class="quantity-wrap"></td>
+
+                    <td class="status-wrap">
+                      <span class="status">Delivered</span>
+                    </td>
+                  </tr>
+
+                </thead>
+
+
+
+
+                  <tr>
+                      <td class="row">
+                        <div class="product">
+                          <div class="logo-container">
+                            <img src="1.jpg"
+                            class="logo" alt="Smart Logo">
+                          </div>
+                          <div class="product-info">
+                            <span class="product-name">123123123</span>
+                            <span class="product-description"> asdasdadsasd</span>
+                          </div>
+                        </div>
+                      </td>
+
+                      <td class="price-wrap">
+                        <div class="price">
+                          <span >Price: $123</span>
+                        </div>
+                      </td>
+
+                      <td class="quantity-wrap">
+                        <div class="quantity">
+                          <span >Quantity: 1</span>
+                        </div>
+                      </td>
+
+                  </tr>
+
+                
+              </table>
+          </div>
+      
+
+
+    </div>
+
+</body>
+</html>

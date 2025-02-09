@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../public/css/profileAddress.css">
+    <script src="../../public/javaScript/profile.script.js" defer></script>
+</head>
+<body>
+  
+    <nav>
+        <div id="navbar" class="navbar">
+            <div class="left-nav">
+                <a href="">Menu</a>
+                <a href="">Product</a>
+                <a href="">About us</a>
+            </div>
+            <div class="logo"><a href="">HIGH ELEVATION</a></div>
+            <div class="right-nav">
+                <div class="search-bar">
+                    <input type="search" name="product_search" id="">
+                </div>
+    
+                <div class="icon profile-icon" onclick="toggleDropdown()">
+                    <img src="assets/icons/profile.svg" alt="profile">
+                    <!-- Dropdown menu -->
+                    <div id="dropdown" class="dropdown hidden">
+                        <ul>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Address</a></li>
+                            <li><a href="#">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="icon"><img src="assets/icons/cart.svg" alt="shopping-cart"></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        
+        <aside class="user-setting-menu">
+            <h1>User Settings</h1>
+            <div class="user-settings-menu">
+                <ul>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="container">
+          <div class="header">
+              <h2>Address Book</h2>
+              <div class="links">
+                  <a href="#">Make default shipping address</a> |
+                  <a href="#">Make default billing address</a>
+              </div>
+          </div>
+  
+          <table>
+              <thead>
+                  <tr>
+                      <th>Full Name</th>
+                      <th>Address</th>
+                      <th>Postcode</th>
+                      <th>Phone Number</th>
+                      <th></th>
+                      <th>Actions</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>April Bords Nerosa</td>
+                      <td><span class="badge">HOME</span></td>
+                      <td> 8000</td>
+                      <td></td>
+                      <td>
+                          <p>Default Shipping Address</p>
+                          <p>Default Billing Address</p>
+                      </td>
+                      <td><a href="#" class="edit">EDIT</a></td>
+                  </tr>
+  
+              </tbody>
+          </table>
+  
+          <div class="add-button">
+              <button>+ ADD NEW ADDRESS</button>
+          </div>
+      </div>
+
+    </div>
+
+</body>
+</html>
